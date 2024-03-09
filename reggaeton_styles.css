@@ -1,0 +1,421 @@
+:root {
+  overscroll-behavior: none;
+}
+
+body {
+  background: linear-gradient(#ffffff, #ffbc04, #d41c1b, #ffbc04, #ffffff);
+  background-size: 400% 400%;
+  animation: gradient 45s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@font-face {
+  font-family: "T1 Zirbal";
+  font-weight: bold;
+  src: url("assets/webfontkit-20240122-051204/T1ZirbalTrial-BoldXt-BF64d440688c5df.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "T1 Zirbal";
+  font-weight: light;
+  src: url("assets/webfontkit-20240122-051204/T1ZirbalTrial-Light-BF64d44068c332e.ttf");
+}
+@font-face {
+  font-family: "Aksioma";
+  src: url("assets/webfontkit-20240122-051204/aksioma_condensed-webfont.woff");
+  unicode-range: U+003F;
+}
+@font-face {
+  font-family: "Greed";
+  src: url("assets/GreedCondensedTRIAL-Regular.ttf");
+}
+
+.custom-font {
+  font-family: "Aksioma";
+  /* Add any additional styles as needed */
+}
+
+#header {
+  background-color: black;
+  box-shadow: 0 0 4vh 9.5vh black;
+  font-family: "Greed";
+  color: black;
+  font-size: 6.8vw;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+  line-height: 150%;
+  z-index: 2;
+}
+
+#headerimage {
+  margin-left: 0.5%;
+  opacity: 1;
+  transition: 0.5s;
+}
+#title {
+  font-family: "T1 Zirbal";
+  font-weight: bold;
+  margin-top: 0.5%;
+  margin-left: 0.5%;
+  color: #d41c1b;
+  cursor: pointer;
+  z-index: 4;
+  text-align: left;
+  width: 100vw;
+  display: flex;
+  transition: width 0.5s ease;
+}
+#navbar li {
+  padding-left: 1.5vw;
+}
+
+#subtitle {
+  font-family: "Aksioma";
+  color: #d41c1b;
+  font-weight: 500;
+  font-size: 1.5vw;
+  text-align: left;
+  z-index: -1;
+  transition: 0.2s;
+  margin-top: -12%;
+  margin-left: 0.5%;
+}
+#navbar {
+  transition: 0.3s;
+  z-index: 3;
+  opacity: 0;
+  margin-left: 39.9vw;
+}
+
+ul {
+  font-family: "Aksioma";
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-size: 1.5vw;
+  margin-top: -45%;
+  line-height: 150%;
+  position: fixed;
+  z-index: 10000;
+}
+
+li {
+  display: inline;
+  color: #d41c1b;
+}
+
+a:link {
+  color: #d41c1b;
+}
+a:visited {
+  color: #d41c1b;
+}
+a:hover {
+  color: #ffbc04;
+  cursor: pointer;
+}
+
+.musicplayer {
+  margin-left: 2em;
+  margin-top: 3vh;
+}
+
+#openingimage {
+  padding-bottom: 70vh;
+  margin-top: -50vh;
+  width: 40vw;
+  margin-left: 7em;
+}
+
+#abstracttext {
+  font-family: "Aksioma";
+  color: black;
+  font-weight: 500;
+  font-size: 1.5vw;
+  padding-right: 5em;
+  margin-top: -70%;
+}
+
+#abstracttext-body {
+  text-indent: 2em;
+}
+
+#glossarytext {
+  text-indent: -2em;
+  font-size: 1.5vw;
+  padding-left: 2em;
+  padding-right: 5em;
+  font-family: "Aksioma";
+  padding-top: -1vh;
+}
+
+#glossary {
+  margin-bottom: 10vh;
+}
+
+.headline {
+  font-family: "Aksioma";
+  color: black;
+  font-weight: bold;
+  font-size: 3vw;
+  margin: 0;
+  margin-top: -1.5vh;
+  padding-bottom: 1em;
+  letter-spacing: -0.05vw;
+  text-decoration: underline;
+}
+
+.chapter2-headline {
+  font-family: "Aksioma";
+  color: black;
+  font-weight: bold;
+  font-size: 3vw;
+  margin: 0;
+  padding-bottom: 1em;
+
+  letter-spacing: -0.05vw;
+  text-decoration: underline;
+}
+
+#headline-abstract {
+  font-family: "Aksioma";
+  color: black;
+  font-weight: bold;
+  font-size: 3vw;
+  margin: 0;
+  margin-top: -1.5vh;
+  padding-bottom: 0em;
+  letter-spacing: -0.05vw;
+  text-decoration: underline;
+}
+
+#last-headline {
+  font-family: "Aksioma";
+  color: black;
+  font-weight: bold;
+  font-size: 3vw;
+  margin: 0;
+  margin-top: 3vh;
+  margin-bottom: -2vh;
+  letter-spacing: -0.05vw;
+  text-decoration: underline;
+  padding-bottom: 1em;
+}
+.bodytext {
+  font-family: "Aksioma";
+  color: black;
+  font-weight: 500;
+  font-size: max(1.75em, 2.5vw);
+  margin: 0;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.bodytext-main {
+  font-family: "Aksioma";
+  color: black;
+  font-weight: 500;
+  font-size: max(1.75em, 2.5vw);
+  margin: 0;
+  margin-top: 4vh;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 25%;
+  margin-right: 20%;
+  margin-top: 50%;
+}
+
+p {
+  margin-bottom: 1%;
+}
+
+.text-section {
+  padding-top: 15rem;
+  margin-top: -7rem;
+  margin-bottom: -2em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for the lyrics */
+  /* Adjust the gap between elements as needed */
+}
+
+.lyrics {
+  font-family: "Aksioma";
+  color: black;
+  font-weight: 500;
+  font-size: max(1.75em, 3vw);
+  /*letter-spacing: 0.01em;*/
+  margin: 0;
+  text-align: left;
+  margin-left: 13%;
+  line-height: -10em;
+  line-height: 100%;
+  border-radius: 5rem;
+  padding: 0.5rem;
+  margin-top: 3rem !important;
+  margin-bottom: 1rem !important;
+  width: auto;
+  color: #d41c1b;
+  text-shadow: #ffbc04 1px 0 10px;
+}
+
+#lyrics-dembow {
+  font-family: "Aksioma";
+  color: black;
+  font-weight: 500;
+  font-size: max(1.75em, 3vw);
+  /*letter-spacing: 0.01em;*/
+  text-align: left;
+  margin-left: 1.45em;
+  line-height: -10em;
+  line-height: 100%;
+  padding: 0.5rem;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  width: auto;
+  color: #d41c1b;
+  text-shadow: #ffbc04 1px 0 10px;
+}
+
+.caption {
+  font-family: "Aksioma";
+  color: black;
+  font-weight: 500;
+  font-size: max(1em, 1.5vw);
+  letter-spacing: -0.03em;
+  margin-top: -1.5vh;
+  margin-bottom: 4vh;
+  text-align: justify;
+  margin-left: 14.5%;
+}
+
+.caption-dembow {
+  font-family: "Aksioma";
+  color: black;
+  font-weight: 500;
+  font-size: max(1em, 1.5vw);
+  letter-spacing: -0.03em;
+  margin-top: -1.5vh;
+  margin-bottom: 6vh;
+  text-align: justify;
+  margin-left: 7.5%;
+}
+
+.cls-1:hover {
+  fill: #d41b1b75;
+  cursor: pointer;
+  stroke: black;
+
+  stroke-width: 1px;
+  display: block;
+}
+
+.cls-3 {
+  stroke: black;
+  stroke-width: 1px;
+  fill: none;
+}
+.cls-4 {
+  stroke: black;
+  stroke-width: 1px;
+  fill: blue;
+}
+.cls-1 {
+  fill: black;
+  stroke-miterlimit: 10;
+  stroke-width: 0.5px;
+  transition: 0.1s;
+}
+
+.country-info-card {
+  display: none;
+}
+
+.cls-2 {
+  fill: none;
+  stroke: black;
+}
+
+#CaribeMap {
+  width: 60%;
+  margin-left: 0.5%;
+  margin-top: 3vh;
+  padding: 2vh;
+}
+.hover-container {
+  position: relative;
+  cursor: pointer;
+  color: #d41c1b;
+  text-shadow: #ffffff 0px 0 8px;
+}
+
+.hover-content {
+  display: none;
+  font-size: 2vh;
+  top: 40%;
+  left: 1vw;
+  gap: 0.5vw;
+  cursor: pointer;
+  text-shadow: none;
+}
+
+.hover-container:hover .hover-content {
+  display: grid;
+  position: fixed;
+  cursor: pointer;
+}
+
+.footnote-caption {
+  color: black;
+  display: fixed;
+  font-size: 1.5vw;
+  text-indent: -0.85em;
+  padding-left: 0.85em;
+  padding-right: 0.85em;
+}
+
+.spanimage {
+  max-width: 23vw;
+}
+
+#quotes {
+  background-color: white;
+}
+
+.bibliography {
+  padding-top: 5vh;
+}
+
+#biblio {
+  border-radius: 3px;
+  color: rgb(0, 0, 0);
+  background-color: #00000000;
+  border-color: #00000000;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  font-family: "Aksioma";
+  font-size: 1.5em;
+}
