@@ -7,6 +7,8 @@ body {
   background-size: 400% 400%;
   animation: gradient 45s ease infinite;
   height: 100vh;
+  font-family: "Aksioma";
+  margin: 0;
 }
 
 @keyframes gradient {
@@ -79,6 +81,7 @@ body {
   display: flex;
   transition: width 0.5s ease;
 }
+
 #navbar li {
   padding-left: 1.5vw;
 }
@@ -91,9 +94,10 @@ body {
   text-align: left;
   z-index: -1;
   transition: 0.2s;
-  margin-top: -12%;
+  margin-top: 0%;
   margin-left: 0.5%;
 }
+
 #navbar {
   transition: 0.3s;
   z-index: 3;
@@ -108,7 +112,7 @@ ul {
   padding: 0;
   color: #000000;
   font-size: 1.5vw;
-  margin-top: -45%;
+  margin-top: -45.5%;
   line-height: 150%;
   position: fixed;
   z-index: 10000;
@@ -117,6 +121,16 @@ ul {
 li {
   display: inline;
   color: #d41c1b;
+}
+
+.toggle-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
 }
 
 a:link {
@@ -261,6 +275,14 @@ p {
   /* Adjust the gap between elements as needed */
 }
 
+.mobile-photos {
+  max-width: 20em;
+}
+
+#mobile-footnotes {
+  display: none;
+}
+
 .lyrics {
   font-family: "Aksioma";
   color: black;
@@ -279,6 +301,13 @@ p {
   width: auto;
   color: #d41c1b;
   text-shadow: #ffbc04 1px 0 10px;
+}
+
+audio {
+  width: 60vw;
+  height: 4vh;
+  margin-bottom: 6vh;
+  margin-left: 5vw;
 }
 
 #lyrics-dembow {
@@ -405,12 +434,24 @@ p {
 }
 
 .bibliography {
-  padding-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -8%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
+
+.bibliography-item {
+  width: 48%; /* Adjust the width as needed */
+  margin-bottom: 10px;
+}
+
+/* Add a bit of styling to the button */
 
 #biblio {
   border-radius: 3px;
-  color: rgb(0, 0, 0);
+  color: #d41c1b;
   background-color: #00000000;
   border-color: #00000000;
   text-align: center;
@@ -418,4 +459,177 @@ p {
   cursor: pointer;
   font-family: "Aksioma";
   font-size: 1.5em;
+  text-decoration: underline;
+  margin: 8%;
+}
+
+#biblio:hover {
+  color: #ffbc04;
+}
+
+@media only screen and (max-width: 767px) {
+  #title {
+    padding-top: 3vh;
+    margin-left: 5%;
+  }
+
+  ul {
+    font-family: "Aksioma";
+    list-style-type: none;
+    color: #000000;
+    font-size: 6.5vw;
+    margin-top: 100%;
+    line-height: 150%;
+    position: fixed;
+    z-index: 10000;
+    text-align: justify;
+    background-color: #000000;
+  }
+
+  #navbar li {
+    padding: 0;
+    display: inline-block;
+    background-color: #000000;
+  }
+
+  #navbar {
+    transition: 0.3s;
+    z-index: 3;
+    opacity: 0;
+    margin-left: 0vw;
+    color: #000000;
+    margin-left: 5%;
+    margin-right: 5%;
+    opacity: 0;
+    background-color: #000000;
+    box-shadow: 4vh 4vh 4vh 9.5vh black;
+  }
+
+  .navbar.collapsed {
+    opacity: 0;
+  }
+
+  #openingimage {
+    padding-bottom: 70vh;
+    margin-top: 20vh;
+    width: 90vw;
+    margin-left: 5%;
+  }
+
+  #coffin {
+    width: 90vw;
+  }
+
+  #subtitle {
+    font-size: 5vw;
+    margin-top: 50vh;
+    margin-left: 5%;
+    margin-right: 30%;
+    line-height: 110%;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    margin-top: 50%;
+    margin-right: 5%;
+  }
+
+  .toggle-button {
+    display: block;
+    position: fixed;
+    font-family: "Aksioma";
+    margin-top: 42vh;
+    margin-left: 75vw;
+    color: #d41c1b;
+    background-color: #00000000;
+    font-size: 9vw;
+    text-decoration: underline;
+    z-index: 99999999;
+    text-shadow: #ffffff 1px 0 10px;
+  }
+
+  .text-section {
+    margin-left: 5%;
+  }
+
+  #abstracttext {
+    font-size: 4vw;
+    margin-top: -95vh;
+    text-align: justify;
+  }
+
+  .headline {
+    font-size: 9vw;
+  }
+
+  #headline-abstract {
+    font-size: 9vw;
+    margin: 0;
+    margin-top: -1.5vh;
+  }
+
+  .chapter2-headline {
+    font-size: 9vw;
+    margin-top: -8vh;
+  }
+
+  audio {
+    margin-left: -1vw;
+  }
+  .lyrics {
+    font-size: 3vh;
+    margin-left: -3vw;
+  }
+
+  #lyrics-dembow {
+    margin-left: -2.5vw;
+  }
+
+  .caption {
+    margin-left: 0;
+    margin-top: 1vh;
+  }
+
+  .caption-dembow {
+    margin-left: 0;
+    margin-top: 1vh;
+  }
+
+  #last-headline {
+    font-size: 9vw;
+    margin-bottom: -5vh;
+    margin-top: -5vh;
+  }
+
+  #glossarytext {
+    font-size: 4vw;
+  }
+
+  .spanimage {
+    max-width: none;
+    max-height: 22vh;
+  }
+
+  .hover-content {
+    display: none;
+  }
+
+  .hover-container:hover {
+    display: none;
+  }
+
+  #mobile-footnotes {
+    display: block;
+    padding-bottom: 1em;
+    text-align: justify;
+    margin-top: 2em;
+    max-width: 20em;
+    color: #d41c1b;
+    text-shadow: #ffffff 1px 0 10px;
+  }
+  .mobile-photos {
+    padding-bottom: 1vh;
+  }
 }
