@@ -35,8 +35,8 @@ body {
 }
 @font-face {
   font-family: "Aksioma";
-  src: url("assets/webfontkit-20240122-051204/aksioma_condensed-webfont.woff");
-  unicode-range: U+003F;
+  src: url("assets/webfontkit-20240122-051204/aksioma_condensed-webfont.woff")
+    format("truetype");
 }
 @font-face {
   font-family: "Greed";
