@@ -130,6 +130,7 @@ li {
   font-size: 16px;
   cursor: pointer;
   display: none;
+  z-index: 1;
 }
 
 a:link {
@@ -439,6 +440,8 @@ audio {
   margin-top: -8%;
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 2vh;
+  padding-bottom: 2vh;
 }
 
 .bibliography-item {
@@ -540,7 +543,7 @@ audio {
     position: fixed;
     font-family: "Aksioma";
     margin-top: 42vh;
-    margin-left: 75vw;
+    margin-left: 82vw;
     background-color: #00000000;
     font-size: 9vw;
     z-index: 99999999;
