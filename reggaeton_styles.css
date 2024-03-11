@@ -124,7 +124,6 @@ li {
 }
 
 .toggle-button {
-  background-color: #333;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -542,7 +541,6 @@ audio {
     font-family: "Aksioma";
     margin-top: 42vh;
     margin-left: 75vw;
-    color: #d41c1b;
     background-color: #00000000;
     font-size: 9vw;
     z-index: 99999999;
